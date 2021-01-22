@@ -1,0 +1,107 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.carousel .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+#carouselProgram .carousel-indicators {
+    left: 0;
+    top: auto;
+    bottom: -35px;
+}
+
+#carouselProgram .carousel-indicators li {
+    width: 8px;
+    height: 8px;
+}
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+}
+
+.card {
+    width: 15rem; 
+    height: 22rem;
+}
+
+.columns-speaker {
+    box-shadow: inset 0 0 0 1000px rgba(19, 71, 0, 0.6);
+}
+
+.columns-mitra {
+    box-shadow: inset 0 0 0 1000px rgba(0, 71, 67, 0.6);
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+    html {
+        font-size: 0.8rem;
+    }
+    .services {
+        text-align: center;
+    }
+    .container {
+        width: 100%;
+    }
+    .card {
+        width: 11rem;
+    }
+    .card-title {
+        font-size: 12px;
+    }
+}
+@media (max-width: 768px) {
+    html {
+        font-size: 0.6rem;
+    }
+    .services {
+        text-align: center;
+    }
+    .container {
+        width: 85%;
+    }
+    .card {
+        width: 10rem;
+    }
+    .card-title {
+        font-size: 11px;
+    }
+    .row-program .col {
+        width: 20%;
+    }
+}
+@media (max-width: 576px) {
+    html {
+        font-size: 0.5rem;
+    }
+    .services {
+        text-align: center;
+    }
+    .container {
+        width: 85%;
+    }
+    .card {
+        width: 10rem;
+    }
+    .card-title {
+        font-size: 8px;
+    }
+    .row-program .col {
+        width: 20%;
+    }
+}
+
